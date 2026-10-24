@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ffe4f1">
+  <title>Для моєї Вікулі 💗</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="floaties" aria-hidden="true">
+    <span>♡</span><span>✦</span><span>୨୧</span><span>♡</span><span>✧</span><span>♡</span>
+  </div>
+
+  <header class="topbar">
+    <a class="brand" href="#home">pusheen <span>♡</span></a>
+    <a class="tiny-pill" href="#surprises">маленький сюрприз</a>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">маленький сайт для особливої людини</p>
+        <h1>для моєї<br><span>Вікулі</span> ♡</h1>
+        <p class="intro">Трішки рожевого, трішки блакитного і дуже багато тепла — усе це для тебе!</p>
+        <a class="button primary" href="#letter">відкрити послання <span>♡</span></a>
+        <p class="tiny-note">створено з любов’ю та котиками</p>
+      </div>
+      <div class="hero-art" aria-label="Милий котик Pusheen">
+        <div class="sparkle sparkle-one">✦</div>
+        <div class="sparkle sparkle-two">♡</div>
+        <div class="cat-card">
+          <div class="cat-ears"><i></i><i></i></div>
+          <div class="cat-body">
+            <div class="cat-stripes"><b></b><b></b><b></b></div>
+            <div class="cat-face"><span class="eye"></span><span class="eye"></span><span class="mouth">⌣</span></div>
+            <div class="cat-cheek left"></div><div class="cat-cheek right"></div>
+          </div>
+          <div class="cat-tail"></div>
+          <div class="cat-caption">pusheen says hi!</div>
+        </div>
+        <span class="cloud cloud-one">☁</span><span class="cloud cloud-two">☁</span>
+      </div>
+    </section>
+
+    <section class="section letter-section" id="letter">
+      <p class="eyebrow">відкрий, коли будеш готова</p>
+      <h2>маленьке послання <span>💌</span></h2>
+      <div class="letter-card">
+        <div class="letter-stamp">♡</div>
+        <p id="letterText">Вікуля, ти неймовірна! Нехай у твоєму житті буде багато приводів усміхатися, теплих обіймів і маленьких радощів.</p>
+        <button class="button blue" id="letterButton" type="button">ще одне послання ✧</button>
+      </div>
+    </section>
+
+    <section class="section reasons-section">
+      <p class="eyebrow">10 маленьких нагадувань</p>
+      <h2>чому ти особлива <span>୨୧</span></h2>
+      <div class="reason-grid">
+        <article class="reason"><span>01</span><p>З тобою навіть звичайний день стає кращим.</p></article>
+        <article class="reason"><span>02</span><p>Ти вмієш дарувати гарний настрій.</p></article>
+        <article class="reason"><span>03</span><p>З тобою можна говорити про все.</p></article>
+        <article class="reason"><span>04</span><p>Ти додаєш у життя трішки магії.</p></article>
+        <article class="reason"><span>05</span><p>Твоя усмішка робить день світлішим.</p></article>
+        <article class="reason"><span>06</span><p>Ти заслуговуєш на найтепліші слова.</p></article>
+        <article class="reason"><span>07</span><p>З тобою можна бути собою.</p></article>
+        <article class="reason"><span>08</span><p>Ти створюєш спогади, які хочеться берегти.</p></article>
+        <article class="reason"><span>09</span><p>Ти особлива саме така, як є.</p></article>
+        <article class="reason"><span>10</span><p>Бо ти — це ти, і це вже багато ♡</p></article>
+      </div>
+    </section>
+
+    <section class="section surprise-section" id="surprises">
+      <p class="eyebrow">натискай на кнопочки</p>
+      <h2>маленькі сюрпризи <span>🎀</span></h2>
+      <div class="surprise-grid">
+        <button class="surprise-button pink" data-message="Надсилаю тобі віртуальні обійми! ♡">обійми</button>
+        <button class="surprise-button blue" data-message="Нагадування: ти чудова, навіть у найзвичайніший день ✨">нагадування</button>
+        <button class="surprise-button lilac" data-message="Тобі належить ціла хмаринка щастя ☁">хмаринка щастя</button>
+      </div>
+      <div class="surprise-message" id="surpriseMessage" aria-live="polite">Твій сюрприз чекає на тебе ♡</div>
+    </section>
+
+    <section class="final section">
+      <div class="final-cat">♡ ฅ^•ﻌ•^ฅ ♡</div>
+      <p class="eyebrow">і наостанок</p>
+      <h2>ти — моє сонечко</h2>
+      <p>Нехай у тебе завжди буде причина усміхнутися, хтось, хто тебе підтримає, і маленьке диво на кожен день.</p>
+      <button class="button primary" id="heartButton" type="button">подарувати сердечко ♡</button>
+      <div class="heart-pop" id="heartPop" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer>зроблено з любов’ю для Вікулі <span>♡</span></footer>
+  <script>
+    const messages = [
+      "Вікуля, ти неймовірна! Нехай у твоєму житті буде багато приводів усміхатися, теплих обіймів і маленьких радощів.",
+      "Пам’ятай: навіть маленькі кроки — це теж рух уперед. Я в тебе вірю ♡",
+      "Нехай сьогодні станеться щось дуже приємне, навіть якщо це буде просто улюблена смакота 🎀",
+      "Ти заслуговуєш на турботу, щирість і багато-багато щасливих моментів ✨"
+    ];
+    let messageIndex = 0;
+    document.getElementById("letterButton").addEventListener("click", () => {
+      messageIndex = (messageIndex + 1) % messages.length;
+      document.getElementById("letterText").textContent = messages[messageIndex];
+    });
+
+    document.querySelectorAll(".surprise-button").forEach(button => {
+      button.addEventListener("click", () => {
+        document.getElementById("surpriseMessage").textContent = button.dataset.message;
+      });
+    });
+
+    document.getElementById("heartButton").addEventListener("click", () => {
+      const pop = document.getElementById("heartPop");
+      pop.textContent = "💗  💙  💗  💙  💗";
+      pop.classList.remove("show");
+      requestAnimationFrame(() => pop.classList.add("show"));
+    });
+  </script>
+</body>
+</html>
